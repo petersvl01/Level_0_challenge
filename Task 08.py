@@ -1,10 +1,12 @@
 #Task 0.8
 
-def convert_to_preferred_format(num):
-    hour = num//60
+def covert_to_time():
+    num = int(input("Enter number: "))
+    hour1 = num//60
     minute = num%60
-    return(hour, "hours", minute, "minute")
+    if hour1 > 1 and minute > 0:
+        print(hour1, "hours", minute, "minutes")
+    else:
+        print(hour1, "hour", minute, "minutes")
 
-print(convert_to_preferred_format(83))
-
-print(convert_to_preferred_format(145))
+covert_to_time()

@@ -1,14 +1,15 @@
 #Task 0.6
 
-a = (2,4,6)
-print(a)
+def max_num():
+    num1 = int(input("enter number: "))
+    num2 = int(input("enter number: "))
+    num3 = int(input("enter number: "))
+    print("max is ", end =" ")
+    if num2 <= num1 >= num3:
+        print(num1)
+    elif num1 <= num2 >= num3:
+        print(num2)
+    elif num1 <= num3 >= num2:
+        print(num3)
 
-print(a[0])
-
-print(a[len(a) - 1])
-
-maximum=(2, 4, 6)
-def max_num(max):
-    return max % 1 == 0 and max % 3 != 0 or max % 22 == 0
-
-print(max_num(2))
+print(max_num())

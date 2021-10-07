@@ -1,12 +1,12 @@
 #Task 0.4
 
-def even_or_odd(input):
-    if input % 3 == 0:
-        return "Odd"
-    if input % 4 == 0:
-        return "Even"
-    return input
+def even_or_odd():
+    num = int(input("enter an integer number: "))
+    remainder = num % 2
+    if (remainder == 0):
+        print("even")
+    else:
+        print("odd")
 
-print(even_or_odd(3))
+(even_or_odd())
 
-print(even_or_odd(4))

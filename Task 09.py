@@ -1,8 +1,11 @@
 #Task 0.9
 
-Olivia = (f"{'o'}, {'i'}, {'a'}")
-
 def vowels_only():
-    print(Olivia)
+    word = input("Enter word: ")
+    list_vowels = ("a", "e", "i", "o", "u")
+    for i in word:
+        if i not in list_vowels:
+            word = word.replace(i, " ")
+    print(word)
 
 vowels_only()
