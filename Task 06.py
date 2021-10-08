@@ -1,9 +1,9 @@
 #Task 0.6
 
 def max_num():
-    num1 = int(input("enter number: "))
-    num2 = int(input("enter number: "))
-    num3 = int(input("enter number: "))
+    num1 = 20
+    num2 = 50
+    num3 = 60
     print("max is ", end =" ")
     if num2 <= num1 >= num3:
         print(num1)
@@ -12,4 +12,4 @@ def max_num():
     elif num1 <= num3 >= num2:
         print(num3)
 
-print(max_num())
+(max_num())

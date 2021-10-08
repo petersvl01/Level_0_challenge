@@ -1,7 +1,6 @@
 #Task 0.8
 
-def covert_to_time():
-    num = int(input("Enter number: "))
+def covert_to_time(num):
     hour1 = num//60
     minute = num%60
     if hour1 > 1 and minute > 0:
@@ -9,4 +8,6 @@ def covert_to_time():
     else:
         print(hour1, "hour", minute, "minutes")
 
-covert_to_time()
+covert_to_time(100)
+covert_to_time(310)
+
