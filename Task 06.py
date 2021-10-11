@@ -1,15 +1,21 @@
 #Task 0.6
 
-def max_num():
-    num1 = 20
-    num2 = 50
-    num3 = 60
-    print("max is ", end =" ")
-    if num2 <= num1 >= num3:
-        print(num1)
-    elif num1 <= num2 >= num3:
-        print(num2)
-    elif num1 <= num3 >= num2:
-        print(num3)
+def find_maxno():
+    m = [90,78,34]
+    higest_number = 0
+    for number in m:
+        if higest_number < number: 
+            higest_number = number
+            print(number)
+            
+print(find_maxno())
 
-(max_num())
+def find_maxno():
+    m = [90,78,34,100]
+    higest_number = 91
+    for number in m:
+        if higest_number < number: 
+            higest_number = number
+            print(number)
+            
+print(find_maxno())
