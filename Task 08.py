@@ -11,10 +11,17 @@ def convert_to_time(num):
         print(hour1, "hour", minute, "minutes")
     elif hour1 > 1 and minute > 1:
         print(hour1, "hours", minute, "minutes")
+    elif hour1 < 1 and minute > 1:
+        print(minute, "minutes")
+    elif hour1 == 1 and minute < 1:
+        print(hour1, "hour")
+    elif hour1 > 1 and minute < 1:
+        print(hour1, "hours")
+        
 
-
-convert_to_time(61)
+convert_to_time(40)
+convert_to_time(60)
+convert_to_time(120)
 convert_to_time(100)
 convert_to_time(181)
 convert_to_time(310)
-
