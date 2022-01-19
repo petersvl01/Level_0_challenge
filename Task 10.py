@@ -1,9 +1,8 @@
-def common_words():
-    str1 = "house"
-    str2 = "computer"
-    s1 = set(str1)
-    s2 = set(str2)
+def common_words(x, y):
+    s1 = set(x)
+    s2 = set(y)
     list = (s1 & s2)
     print("Common letter: {}" .format(list))
 
-common_words()
+common_words("house", "computer")
+common_words("House", "Hose")
