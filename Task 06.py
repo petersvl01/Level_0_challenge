@@ -1,21 +1,26 @@
 #Task 0.6
 
-def find_maxno():
-    m = [90,78,34]
-    higest_number = 0
-    for number in m:
-        if higest_number < number: 
-            higest_number = number
-            print(number)
-            
-print(find_maxno())
+def find_max(x, y, z):
+    if x >= y and x >= z:
+        return x
+    elif y >= x and y >= z:
+        return y
+    elif z >= x and z >= y:
+        return z
+    else:
+        return "Match"
 
-def find_maxno():
-    m = [90,78,34,100]
-    higest_number = 91
-    for number in m:
-        if higest_number < number: 
-            higest_number = number
-            print(number)
-            
-print(find_maxno())
+print(find_max(50,20,35))
+
+
+def find_max(x, y, z, num):
+    if x >= y and x <= z:
+        return x
+    elif y >= x and y >= z:
+        return y
+    elif z >= x and z <= y:
+        return z
+    else:
+        return num
+
+print(find_max(50,20,35,60))
