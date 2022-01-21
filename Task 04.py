@@ -1,5 +1,3 @@
-#Task 0.4
-
 def even_or_odd(num):
   remainder = num % 2
   if (remainder == 0):
