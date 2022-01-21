@@ -1,26 +1,9 @@
-#Task 0.6
+def find_max(*nums):
+    max_no = nums[0]
+    for num in nums:
+        if num > max_no:
+            max_no = num
+    print(max_no)
 
-def find_max(x, y, z):
-    if x >= y and x >= z:
-        return x
-    elif y >= x and y >= z:
-        return y
-    elif z >= x and z >= y:
-        return z
-    else:
-        return "Match"
-
-print(find_max(50,20,35))
-
-
-def find_max(x, y, z, num):
-    if x >= y and x <= z:
-        return x
-    elif y >= x and y >= z:
-        return y
-    elif z >= x and z <= y:
-        return z
-    else:
-        return num
-
-print(find_max(50,20,35,60))
+find_max(20, -6, 1, 9)
+find_max(20, -6, 40, 1, 9)
