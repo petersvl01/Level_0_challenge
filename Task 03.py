@@ -1,6 +1,6 @@
 #Task 0.3
 
-def hello_func(hello):
-    return "Hello {} !".format(hello)
+def hello_func(name):
+    print(f"Hello {name}!")
 
-print(hello_func("Tshepo"))
+hello_func("Vernice")
