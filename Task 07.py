@@ -1,5 +1,3 @@
-#Task 0.7
-
 def convert_to_fahrenheit(x):
     celsius = x
     fahrenheit = (celsius * 1.8) + 32
