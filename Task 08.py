@@ -1,27 +1,18 @@
 #Task 0.8
 
 def convert_to_time(num):
-    hour1 = num//60
-    minute = num%60
-    if hour1 == 1 and minute == 1:
-        print(hour1, "hour", minute, "minute")
-    elif hour1 > 1 and minute == 1:
-        print(hour1, "hours", minute, "minute")
-    elif hour1 == 1 and minute > 1:
-        print(hour1, "hour", minute, "minutes")
-    elif hour1 > 1 and minute > 1:
-        print(hour1, "hours", minute, "minutes")
-    elif hour1 < 1 and minute > 1:
-        print(minute, "minutes")
-    elif hour1 == 1 and minute < 1:
-        print(hour1, "hour")
-    elif hour1 > 1 and minute < 1:
-        print(hour1, "hours")
-    elif hour1 < 1 and minute == 1:
-        print(minute, "minute")
-        
-
-convert_to_time(1)
+    minutes1 = num % 60
+    hour1 = num // 60
+    if hour1 == 1:
+        hour=" hour"
+    else:
+        hour=" hours"
+    if minutes1 == 1:
+        minute=" minute"
+    else:
+        minute=" minutes"
+    print(hour1, hour,",", minutes1, minute)
+      
 convert_to_time(40)
 convert_to_time(60)
 convert_to_time(120)
