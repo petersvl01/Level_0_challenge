@@ -5,8 +5,8 @@ def common_words(word_1, word_2):
     s2 = set(word_2)
     list = (s1 & s2)
     for char in list:
-        char = char.lower()
         char = ', '.join(list)
     print("Common characters: ",char)
    
 common_words("Never", "Ever")
+
