@@ -13,9 +13,7 @@ def convert_to_time(num):
         minute=" minutes"
     print(hour1, hour,",", minutes1, minute)
       
-convert_to_time(40)
-convert_to_time(60)
-convert_to_time(120)
+
 convert_to_time(100)
 convert_to_time(181)
 convert_to_time(310)
