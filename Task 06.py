@@ -1,9 +1,9 @@
 def find_max(*nums):
-    max_no = nums[0]
+    max_num = nums[0]
     for num in nums:
-        if num > max_no:
-            max_no = num
-    print(max_no)
+        if num > max_num:
+            max_num = num
+    print(max_num)
 
 find_max(20, -6, 1, 9)
 find_max(20, -6, 40, 1, 9)
