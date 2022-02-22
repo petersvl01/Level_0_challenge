@@ -9,7 +9,7 @@ def convert_to_time(num):
         minute =" minute"
     else:
         minute =" minutes"
-    print(hour1, hour,",", minutes1, minute)
+    print(f'{hour1} {hour}, {minutes1} {minute}')
       
 
 convert_to_time(100)
