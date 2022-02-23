@@ -1,9 +1,9 @@
 def vowels_only(word):
-    LIST_VOWELS = ['a', 'e', 'i', 'o', 'u']
+    list_vowels = ['a', 'e', 'i', 'o', 'u']
     word = word.lower()
     find_vowels = []
     for char in word:
-        if char in LIST_VOWELS and char not in find_vowels:
+        if char in list_vowels and char not in find_vowels:
                 find_vowels.append(char)
                 newstr = ', '.join(find_vowels)
     print("Vowels: ",newstr)
