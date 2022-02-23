@@ -3,7 +3,7 @@ def find_max(*nums):
     for num in nums:
         if num > max_num:
             max_num = num
-    print(max_num)
+    return max_num
 
-find_max(20, -6, 1, 9)
-find_max(20, -6, 40, 1, 9)
+print(find_max(20, -6, 1, 9))
+print(find_max(20, -6, 40, 1, 9))
