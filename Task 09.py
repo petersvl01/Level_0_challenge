@@ -6,6 +6,6 @@ def vowels_only(word):
         if char in list_vowels and char not in find_vowels:
                 find_vowels.append(char)
                 newstr = ', '.join(find_vowels)
-    print("Vowels: ",newstr)
+    print("Vowels:",newstr)
 
 vowels_only("Airbase")
